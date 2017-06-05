@@ -8,22 +8,20 @@ public class equation2 {
 
         Scanner in = new Scanner(System.in);
 
-        System.out.print("Given equation:");
-        System.out.println("a*x+b=c");
+        System.out.println("Решение линейного уравнения: a*x+b=0");
 
-        System.out.println("Enter value a");
-        int a = in.nextInt();
+        System.out.println("Введите значение аргумента \"a\"");
+        double a = in.nextDouble();
 
-        System.out.println("Enter value b");
-        int b = in.nextInt();
+        System.out.println("Введите значение аргумента \"b\"");
+        double b = in.nextDouble();
 
-        System.out.println("Enter value c");
-        int c = in.nextInt();
+        System.out.println("Вычисляем значение \"x\"");
 
+        double x = ((-b) / a);
 
-        System.out.println("Find: x");
         System.out.print("x=");
-        System.out.print((c - b) / a);
+        System.out.print(x);
     }
 
 }
