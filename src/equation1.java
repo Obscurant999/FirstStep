@@ -16,10 +16,13 @@ public class equation1 {
         System.out.println("Введите значение аргумента \"b\"");
         double b = in.nextDouble();
 
-        if (b == 0) {
+        if (a == 0)
+            System.out.println("Fuck off!");
+
+        else if (b == 0)
             System.out.println("x=0");
-        }
-        else {
+
+        else
 
             System.out.println("Вычисляем значение \"x\"");
 
@@ -28,7 +31,7 @@ public class equation1 {
             System.out.print("x=");
             System.out.print(x);
 
-        }
+
     }
 
 }
