@@ -16,12 +16,19 @@ public class equation1 {
         System.out.println("Введите значение аргумента \"b\"");
         double b = in.nextDouble();
 
-        System.out.println("Вычисляем значение \"x\"");
+        if (b == 0) {
+            System.out.println("x=0");
+        }
+        else {
 
-        double x = ((-b) / a);
+            System.out.println("Вычисляем значение \"x\"");
 
-        System.out.print("x=");
-        System.out.print(x);
+            double x = ((-b) / a);
+
+            System.out.print("x=");
+            System.out.print(x);
+
+        }
     }
 
 }
