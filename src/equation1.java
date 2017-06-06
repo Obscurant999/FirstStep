@@ -17,7 +17,7 @@ public class equation1 {
         double b = in.nextDouble();
 
         if (a == 0)
-            System.out.println("Fuck off!");
+            System.out.println("Ошибка деления на ноль!");
 
         else if (b == 0)
             System.out.println("x=0");
