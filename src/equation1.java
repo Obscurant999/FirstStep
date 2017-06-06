@@ -1,16 +1,27 @@
 /**
  * Created by kano on 05.06.17.
  */
+import java.util.Scanner;
+
 public class equation1 {
     public static void main(String[] args) {
-        int a = 10;
-        int b = 15;
-        int c = 900;
-        System.out.print("Given equation:");
-        System.out.println("a*x+b=c");
-        System.out.println("Find: x");
+
+        Scanner in = new Scanner(System.in);
+
+        System.out.println("Решение линейного уравнения: a*x+b=0");
+
+        System.out.println("Введите значение аргумента \"a\"");
+        double a = in.nextDouble();
+
+        System.out.println("Введите значение аргумента \"b\"");
+        double b = in.nextDouble();
+
+        System.out.println("Вычисляем значение \"x\"");
+
+        double x = ((-b) / a);
+
         System.out.print("x=");
-        System.out.print((c - b) / a);
+        System.out.print(x);
     }
 
 }
