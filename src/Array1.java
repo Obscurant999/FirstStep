@@ -13,39 +13,39 @@ public class Array1 {
 
         Scanner in = new Scanner(System.in);
         System.out.println("Задайте длину массива (от 1 до 100):");
-        int ArrayL = in.nextInt();
-        if (ArrayL <= 0) {
+        int arrayL = in.nextInt();
+        if (arrayL <= 0) {
             System.out.println("Ошибка! Длина массива должна быть от 1 до 100!");
-        } else if (ArrayL > 100) {
+        } else if (arrayL > 100) {
             System.out.println("Ошибка! Длина массива должна быть от 1 до 100!");
         } else {
             System.out.println("Содержимое массива: ");
-            int[] Monsanto = new int[ArrayL];
+            int[] monsanto = new int[arrayL];
             //System.out.println(Monsanto.length);
-            //Заполнеие массива случайными числами;
+            //Заполнение массива случайными числами;
             Random random = new Random();
-            for (int i = 0; i < Monsanto.length; i++) {
-               Monsanto[i] = random.nextInt(999);
-               System.out.print(Monsanto[i] + ", ");
+            for (int i = 0; i < monsanto.length; i++) {
+               monsanto[i] = random.nextInt(999);
+               System.out.print(monsanto[i] + ", ");
             }
             System.out.println("");
 
-            int min = 0;
-                for (int j = 0; j < Monsanto.length; j++) {
-                    if (Monsanto[min] > Monsanto[j]) {
-                        min = j;
-                        System.out.println("Наименьшее введенное число : " + Monsanto[j]);
+            int min = monsanto[0];
+                for (int j = 0; j < monsanto.length; j++) {
+                    if (min > monsanto[j]) {
+                        min = monsanto[j];
                     }
 
                 }
+            System.out.println("Наименьшее введенное число : " + min);
 
-            int max = 0;
-                for (int k = 0; k < Monsanto.length; k++) {
-                    if (Monsanto[max] < Monsanto[k]) {
-                        max = k;
-                        System.out.println("Наибольшее введенное число : " + Monsanto[k]);
+            int max = monsanto[0];
+                for (int k = 0; k < monsanto.length; k++) {
+                    if (max < monsanto[k]) {
+                        max = monsanto[k];
                     }
                 }
+            System.out.println("Наибольшее введенное число : " + max);
 
         }
 
